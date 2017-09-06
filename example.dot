@@ -1,0 +1,9 @@
+digraph structs {
+   rankdir=LR;
+   node [shape=record];
+   tscore [shape=record,label="tscore|<score_id>score_id int\l|<score>score int\l|<person_id>person_id int\l|<game_id>game_id int\l"];
+   tgame [shape=record,label="tgame|<game_id>game_id int\l|<name>name varchar(64)\l|<publisher>publisher varchar(64)\l|<release_date>release_date date\l"];
+   tperson [shape=record,label="tperson|<person_id>person_id int\l|<name>name varchar(32)\l|<age>age int\l"];
+   tscore:person_id -> tperson:person_id;
+   tscore:game_id -> tgame:game_id;
+}

@@ -1,0 +1,11 @@
+tperson|person_id|int|
+tperson|name|varchar(32)|
+tperson|age|int|
+tscore|score_id|int|
+tscore|score|int|
+tscore|person_id|int|
+tscore|game_id|int|
+tgame|game_id|int|
+tgame|name|varchar(64)|
+tgame|publisher|varchar(64)|
+tgame|release_date|date|
